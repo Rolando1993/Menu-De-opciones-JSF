@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Serie Ulam</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h:form id="frmUlam">
+            <h1> Serie Ulam </h1>
+            <h:panelGrid columns="4">
+                    <h:outputText id="txtNumero" value="Ingrese Un Numero"/> 
+                    <h:inputText size="12" maxlength="10" value="#{ulamMB.ul.numero}" />    
+                    <h:commandButton value="Enviar" actionListener="#{ulamMB.generarSerie()}"/>
+                    <h:outputText id="txtResultado" value="#{ulamMB.resultado}"/> 
+                    <h:commandButton value="Limpiar" actionListener="#{beansUlam.limpiar()}"/>
+                    <h:commandButton value = "Menu" action = "/Menu/Menu.xhtml" />
+            </h:panelGrid>
+        </h:form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Primo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+         <h:form id="frmPrimo">
+             <h1> Numero Primo </h1>
+            <h:panelGrid columns="4">
+                    <h:outputText id="txtNombre" value="Ingrese un numero"/> 
+                    <h:inputText size="12" maxlength="10" value="#{primoMB.primo.numero}" />    
+                    <h:commandButton value="Enviar" actionListener="#{primoMB.numeroPrimo()}"/>
+                    <h:outputText id="txtResultado" value="#{primoMB.resultado}"/> 
+                    <h:commandButton value="Limpiar" actionListener="#{beansPrimo.limpiar()}"/>
+                    <h:commandButton value = "Menu" action = "/Menu/Menu.xhtml" />
+            </h:panelGrid>
+        </h:form>
+    </body>
+</html>
