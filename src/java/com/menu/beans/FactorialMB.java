@@ -5,7 +5,7 @@
  */
 package com.menu.beans;
 
-import com.menu.entidades.MenorDeDos;
+import com.menu.entidades.Factorial;
 import javax.faces.bean.ManagedBean;
 
 /**
@@ -13,21 +13,21 @@ import javax.faces.bean.ManagedBean;
  * @author UNIVERSIDAD
  */
 @ManagedBean
-public class MenorDeDosMB {
+public class FactorialMB {
 
-    private MenorDeDos menor2 = new MenorDeDos();
+    private Factorial fac = new Factorial();
     private int resultado;
-
-    public MenorDeDosMB() {
-        menor2 = new MenorDeDos();
+    
+    public FactorialMB() {
+        fac = new Factorial();
     }
 
-    public MenorDeDos getMenor2() {
-        return menor2;
+    public Factorial getFac() {
+        return fac;
     }
 
-    public void setMenor2(MenorDeDos menor2) {
-        this.menor2 = menor2;
+    public void setFac(Factorial fac) {
+        this.fac = fac;
     }
 
     public int getResultado() {
@@ -38,13 +38,13 @@ public class MenorDeDosMB {
         this.resultado = resultado;
     }
 
-    public void numeroMenor2() {
-        int a = menor2.getNumero1();
-        int b = menor2.getNumero2();
-        if (a < b) {
-            resultado = a;
-        } else {
-            resultado = b;
+    
+    public int factorial() {
+        resultado = 1;
+        for (int i = 1; i <= fac.getNumero(); i++) {
+            resultado *= i;
         }
+        return resultado;
     }
+    
 }

@@ -7,7 +7,6 @@ package com.menu.beans;
 
 import com.menu.entidades.MayorDeDos;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 
 /**
  *

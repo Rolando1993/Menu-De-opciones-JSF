@@ -7,7 +7,6 @@ package com.menu.beans;
 
 import com.menu.entidades.NumeroPerfecto;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 
 /**
  *

@@ -7,7 +7,6 @@ package com.menu.beans;
 
 import com.menu.entidades.Fibonacci;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 
 /**
  *

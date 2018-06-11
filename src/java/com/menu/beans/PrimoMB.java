@@ -5,9 +5,8 @@
  */
 package com.menu.beans;
 
-import com.menu.entidades.NumeroPrimo;
+import com.menu.entidades.Primo;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 
 /**
  *
@@ -16,19 +15,19 @@ import javax.faces.bean.RequestScoped;
 @ManagedBean
 public class PrimoMB {
 
-    private NumeroPrimo primo = new NumeroPrimo();
+    private Primo pri = new Primo();
     private String resultado;
-
+    
     public PrimoMB() {
-        primo = new NumeroPrimo();
+        pri = new Primo();
     }
 
-    public NumeroPrimo getPrimo() {
-        return primo;
+    public Primo getPri() {
+        return pri;
     }
 
-    public void setPrimo(NumeroPrimo primo) {
-        this.primo = primo;
+    public void setPri(Primo pri) {
+        this.pri = pri;
     }
 
     public String getResultado() {
@@ -38,21 +37,20 @@ public class PrimoMB {
     public void setResultado(String resultado) {
         this.resultado = resultado;
     }
-
-    public void numeroPrimo() {
-        int i = 1, j = 0, z = 0;
-        while (i <= primo.getNumero()) {
-            j = primo.getNumero() % i;
-            if (j == 0) {
-                z += 1;
-            }
-            j += 1;
+    
+    public  void verPrimo(){
+        int c=1, r=0,x = 0;
+        while(c <= pri.getNumero()){
+             r = pri.getNumero()% c;
+	     if (r == 0)
+	        x = x + 1;
+	     c = c + 1;
         }
-        if (z == 2) {
-            resultado = "Primo";
-        } else {
+	if(x==2){
+           resultado = "Primo";
+        }else{
             resultado = "No Primo";
         }
     }
-
+    
 }

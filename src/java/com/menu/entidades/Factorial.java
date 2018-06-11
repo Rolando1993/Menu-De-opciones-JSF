@@ -9,7 +9,7 @@ package com.menu.entidades;
  *
  * @author UNIVERSIDAD
  */
-public class NumeroPrimo {
+public class Factorial {
     
     private int numero;
 
@@ -23,8 +23,9 @@ public class NumeroPrimo {
 
     @Override
     public String toString() {
-        return "NumeroPrimo{" + "numero=" + numero + '}';
+        return "Factorial{" + "numero=" + numero + '}';
     }
+    
     
     
 }

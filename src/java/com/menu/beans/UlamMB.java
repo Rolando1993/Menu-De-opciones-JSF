@@ -7,7 +7,6 @@ package com.menu.beans;
 
 import com.menu.entidades.Ulam;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 
 /**
  *
