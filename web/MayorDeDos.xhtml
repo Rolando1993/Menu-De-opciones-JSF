@@ -19,11 +19,8 @@ and open the template in the editor.
                 <h:inputText size="12" maxlength="10" value="#{mayorDeDosMB.mayor2.numero1}"/>
                 <h:outputText id="txtNumero2" value="Ingrese El Segundo Numero"/> 
                 <h:inputText size="12" maxlength="10" value="#{mayorDeDosMB.mayor2.numero2}"/>  
-
                 <h:commandButton value="Enviar" actionListener="#{mayorDeDosMB.numeroMayor2()}"/>
                 <h:outputText id="txtResultado" value="#{mayorDeDosMB.resultado}"/> 
-                <h:commandButton value="Limpiar" actionListener="#{beansMayor2.limpiar()}"/>
-                <h:commandButton value = "Menu" action = "/Menu/Menu.xhtml" />
             </h:panelGrid>
         </h:form>
     </body>

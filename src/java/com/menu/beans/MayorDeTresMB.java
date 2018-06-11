@@ -14,7 +14,6 @@ import javax.faces.bean.RequestScoped;
  * @author UNIVERSIDAD
  */
 @ManagedBean
-@RequestScoped
 public class MayorDeTresMB {
 
    private MayorDeTres mayor3 = new MayorDeTres();

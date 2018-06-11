@@ -14,7 +14,6 @@ import javax.faces.bean.RequestScoped;
  * @author UNIVERSIDAD
  */
 @ManagedBean
-@RequestScoped
 public class MenorDeDosMB {
 
     private MenorDeDos menor2 = new MenorDeDos();

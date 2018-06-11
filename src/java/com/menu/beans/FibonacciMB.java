@@ -14,7 +14,6 @@ import javax.faces.bean.RequestScoped;
  * @author UNIVERSIDAD
  */
 @ManagedBean
-@RequestScoped
 public class FibonacciMB {
     
     private Fibonacci fibo = new Fibonacci();
